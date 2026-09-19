@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "title": "Rafeeq — Votre compagnon IA hors ligne",
+    "description": "Rafeeq est un assistant IA de bureau entièrement hors ligne et local, pour l'aide au code, les questions sur vos documents et le résumé — conçu pour les machines isolées et à réseau restreint."
+  },
+  "nav": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "download": "Télécharger",
+    "docs": "Documentation",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "footer": {
+    "rights": "Sous licence MIT.",
+    "builtBy": "Créé par"
+  },
+  "home": {
+    "tagline": "رفيق — « compagnon » en arabe",
+    "title": "Votre compagnon IA entièrement hors ligne",
+    "subtitle": "Rafeeq est un assistant IA de bureau local pour l'aide au code, les questions sur vos documents et le résumé — conçu pour les machines qui ne verront jamais Internet.",
+    "downloadCta": "Télécharger Rafeeq",
+    "featuresCta": "Découvrir ses fonctionnalités",
+    "highlight1Title": "Aucun appel réseau",
+    "highlight1Description": "Rafeeq n'effectue aucun appel réseau à l'exécution, par conception. Coupez votre réseau : il fonctionne à l'identique.",
+    "highlight2Title": "Tout fonctionne sur l'appareil",
+    "highlight2Description": "Propulsé par llama.cpp et des modèles GGUF quantifiés sur CPU — aucun GPU requis, aucune clé API, aucun cloud.",
+    "highlight3Title": "Conçu pour les machines restreintes",
+    "highlight3Description": "VM d'entreprise, réseaux isolés, secteurs réglementés — Rafeeq fonctionne là où les outils IA cloud ne peuvent pas.",
+    "bannerTitle": "Aucune clé API. Aucun appel cloud. Aucune télémétrie.",
+    "bannerSubtitle": "Le modèle, le moteur d'exécution et vos données ne quittent jamais la machine — vérifiable, pas seulement promis."
+  },
+  "features": {
+    "title": "Tout ce que Rafeeq peut faire",
+    "subtitle": "Tout fonctionne sur l'appareil. Rien ici ne nécessite — ni n'utilise — de connexion Internet.",
+    "chatTitle": "Chat local",
+    "chatDescription": "Une invite en entrée, une réponse en flux continu en sortie, propulsée par un petit modèle quantifié tournant sur CPU. Aucun compte, aucune limite d'utilisation, aucune donnée envoyée où que ce soit.",
+    "managerTitle": "Gestionnaire de modèles",
+    "managerDescription": "Pointez Rafeeq vers un fichier .gguf installé localement, changez de modèle et consultez la taille et la quantification en un coup d'œil. Enregistrez des profils nommés pour changer rapidement.",
+    "codeTitle": "Mode aide au code",
+    "codeDescription": "Collez ou sélectionnez du code, posez des questions, obtenez des explications ou des suggestions. Discussion et explication uniquement — Rafeeq n'exécute jamais de code.",
+    "docTitle": "Questions sur documents & résumé",
+    "docDescription": "Chargez un fichier local .txt, .md, .docx ou .pdf et posez des questions sur son contenu ou obtenez un résumé. Les documents longs sont tronqués pour tenir dans le contexte du modèle.",
+    "ragTitle": "RAG local",
+    "ragDescription": "Indexez un dossier de documents avec un modèle d'embedding installé localement, puis posez des questions dont les réponses s'appuient sur les passages les plus pertinents — tout est calculé sur l'appareil.",
+    "sessionTitle": "Historique des sessions",
+    "sessionDescription": "Les conversations sont enregistrées automatiquement et peuvent être reprises depuis la barre latérale, rien n'est perdu entre les sessions.",
+    "offlineTitle": "Hors ligne, vérifiable",
+    "offlineDescription": "Un indicateur dans l'application et une liste de dépendances autorisées, tenue à jour manuellement, confirment qu'aucun plugin capable d'accéder au réseau n'est présent dans la version. Coupez votre réseau — Rafeeq fonctionne à l'identique."
+  },
+  "download": {
+    "title": "Télécharger Rafeeq",
+    "subtitle": "Deux installateurs sont publiés. Les deux se comportent de façon identique une fois un modèle chargé — vous pourrez toujours ajouter ou changer de modèle plus tard.",
+    "standardName": "Rafeeq",
+    "standardDescription": "L'installateur standard. Aucun modèle inclus — vous installez vous-même un fichier .gguf après l'installation.",
+    "standardBestFor": "Machines isolées, réseaux restreints, ou si vous savez déjà quel modèle utiliser.",
+    "bundledName": "Rafeeq (avec modèle de démarrage)",
+    "bundledDescription": "Inclut un petit modèle de démarrage (Qwen2.5-0.5B-Instruct) qui s'installe automatiquement au premier lancement. Rien à configurer.",
+    "bundledBestFor": "Toute personne sur une machine connectée à Internet qui veut commencer à discuter immédiatement.",
+    "size": "Taille",
+    "bestFor": "Idéal pour :",
+    "downloadButton": "Télécharger pour Windows",
+    "footer": "Les versions macOS et Linux arrivent bientôt. Le code source est disponible sur"
+  },
+  "docs": {
+    "title": "Prise en main",
+    "step1Title": "1. Installer Rafeeq",
+    "step1Description": "Téléchargez l'installateur pour votre plateforme depuis la <downloadLink>page de téléchargement</downloadLink>. Si vous hésitez, la version avec modèle de démarrage inclus est la plus simple pour commencer.",
+    "step2Title": "2. Ajouter un modèle (installateur standard uniquement)",
+    "step2Description": "Si vous avez installé la version standard, Rafeeq a besoin d'au moins un fichier de modèle .gguf pour pouvoir discuter :",
+    "step2List1": "Allez sur huggingface.co et recherchez un modèle contenant GGUF dans son nom.",
+    "step2List2": "Téléchargez un fichier quantifié — un nom comme *.Q4_K_M.gguf offre un bon équilibre entre taille et qualité.",
+    "step2List3": "Ouvrez Rafeeq, allez sur l'écran Modèles, et cliquez sur Ouvrir le dossier des modèles. Déposez-y le fichier, puis cliquez sur Actualiser.",
+    "step3Title": "3. Commencer à discuter",
+    "step3Description": "Chargez un modèle depuis l'écran Modèles, puis choisissez un mode — Général, Aide au code, Document ou RAG — selon ce que vous faites.",
+    "ragTitle": "Configurer le RAG local",
+    "ragDescription": "Le mode RAG nécessite un second petit modèle d'embedding (différent de votre modèle de chat) — par exemple nomic-embed-text-v1.5. Installez-le de la même façon qu'un modèle de chat, puis sélectionnez-le dans le mode RAG et indexez un dossier de documents.",
+    "offlineTitle": "Vérifier que c'est vraiment hors ligne",
+    "offlineDescription": "Rafeeq n'effectue aucun appel réseau à l'exécution, par construction. Vous pouvez le vérifier vous-même : bloquez l'accès réseau au niveau du système (pare-feu, adaptateur désactivé, ou VM isolée) et Rafeeq fonctionnera à l'identique. L'application affiche aussi un indicateur de statut hors ligne dans l'en-tête.",
+    "moreTitle": "Pour aller plus loin",
+    "moreDescription": "Pour les instructions de compilation depuis les sources et tous les détails techniques, consultez le",
+    "readmeLink": "README sur GitHub"
+  }
+}

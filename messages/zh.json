@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "title": "Rafeeq — 你的离线 AI 伙伴",
+    "description": "Rafeeq 是一款完全离线的本地 AI 桌面助手，可用于代码帮助、文档问答和摘要总结——专为隔离网络和受限网络环境设计。"
+  },
+  "nav": {
+    "home": "首页",
+    "features": "功能",
+    "download": "下载",
+    "docs": "文档",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单"
+  },
+  "footer": {
+    "rights": "采用 MIT 许可证。",
+    "builtBy": "开发者："
+  },
+  "home": {
+    "tagline": "رفيق — 阿拉伯语中意为「伙伴」",
+    "title": "完全离线的 AI 伙伴",
+    "subtitle": "Rafeeq 是一款本地 AI 桌面助手，可用于代码帮助、文档问答和摘要总结——专为永不接入公共互联网的设备而生。",
+    "downloadCta": "下载 Rafeeq",
+    "featuresCta": "查看功能",
+    "highlight1Title": "零网络调用",
+    "highlight1Description": "Rafeeq 在设计和实现上确保运行时不发起任何网络调用。断开网络，它照常运行。",
+    "highlight2Title": "完全在本地设备运行",
+    "highlight2Description": "由 llama.cpp 和量化的 GGUF 模型在 CPU 上驱动——无需 GPU、无需 API 密钥、无需云服务。",
+    "highlight3Title": "专为受限设备打造",
+    "highlight3Description": "企业虚拟机、隔离网络、受监管行业——在云端 AI 工具无法使用的地方，Rafeeq 依然可用。",
+    "bannerTitle": "无需 API 密钥，无云端调用，无遥测数据。",
+    "bannerSubtitle": "模型、运行环境和你的数据永远不会离开这台设备——这是可验证的事实，而非空口承诺。"
+  },
+  "features": {
+    "title": "Rafeeq 的全部功能",
+    "subtitle": "所有功能均在本地设备上运行，不需要、也不会使用互联网连接。",
+    "chatTitle": "本地对话",
+    "chatDescription": "输入提示，实时流式返回回复，由在 CPU 上运行的小型量化模型驱动。无需账号，没有使用次数限制，任何使用数据都不会发送到任何地方。",
+    "managerTitle": "模型管理",
+    "managerDescription": "将 Rafeeq 指向本地导入的 .gguf 文件，切换模型，并一目了然地查看大小与量化信息。保存命名配置以便快速切换。",
+    "codeTitle": "代码帮助模式",
+    "codeDescription": "粘贴或选中代码，提出问题，获取解释或建议。仅限对话与讲解——Rafeeq 绝不会执行代码。",
+    "docTitle": "文档问答与摘要",
+    "docDescription": "加载本地的 .txt、.md、.docx 或 .pdf 文件，就其内容提问或获取摘要。过长的文档会被截断以适应模型的上下文长度。",
+    "ragTitle": "本地检索增强生成（RAG）",
+    "ragDescription": "使用本地导入的嵌入模型为一个文档文件夹建立索引，然后提出问题，答案将基于最相关的检索片段——所有计算均在本地设备完成。",
+    "sessionTitle": "会话历史",
+    "sessionDescription": "对话会自动保存，可从侧边栏随时恢复，不同会话之间的内容不会丢失。",
+    "offlineTitle": "可验证的离线运行",
+    "offlineDescription": "应用内的状态指示器，加上人工维护的依赖白名单，共同确认此版本未注册任何具备联网能力的插件。断开网络——Rafeeq 依然照常运行。"
+  },
+  "download": {
+    "title": "下载 Rafeeq",
+    "subtitle": "目前发布两个安装包。加载模型后两者行为完全一致——你之后随时都可以添加或切换模型。",
+    "standardName": "Rafeeq",
+    "standardDescription": "标准安装包。不含任何模型——安装完成后需自行导入 .gguf 文件。",
+    "standardBestFor": "适合隔离网络环境、受限网络，或者你已经清楚自己想用哪个模型的情况。",
+    "bundledName": "Rafeeq（含入门模型）",
+    "bundledDescription": "内置一个小型入门模型（Qwen2.5-0.5B-Instruct），首次启动时会自动安装，无需任何配置。",
+    "bundledBestFor": "适合联网设备上、希望立即开始对话的任何用户。",
+    "size": "大小",
+    "bestFor": "适用场景：",
+    "downloadButton": "下载 Windows 版",
+    "footer": "macOS 和 Linux 版本即将推出。源代码可在以下位置获取："
+  },
+  "docs": {
+    "title": "快速上手",
+    "step1Title": "1. 安装 Rafeeq",
+    "step1Description": "从<downloadLink>下载页面</downloadLink>下载适合你平台的安装包。如果不确定该选哪个版本，含入门模型的版本是最简单的上手方式。",
+    "step2Title": "2. 添加模型（仅标准安装包需要）",
+    "step2Description": "如果你安装的是标准版本，Rafeeq 需要至少一个 .gguf 模型文件才能开始对话：",
+    "step2List1": "前往 huggingface.co，搜索名称中包含 GGUF 的模型。",
+    "step2List2": "下载一个量化文件——例如名称类似 *.Q4_K_M.gguf 的文件，在大小与质量之间有较好的平衡。",
+    "step2List3": "打开 Rafeeq，进入模型页面，点击「打开模型文件夹」，将文件放入其中，然后点击「刷新」。",
+    "step3Title": "3. 开始对话",
+    "step3Description": "在模型页面加载一个模型，然后根据你要做的事情选择模式——通用、代码帮助、文档，或 RAG。",
+    "ragTitle": "配置本地 RAG",
+    "ragDescription": "RAG 模式需要另外一个小型嵌入模型（不是你的对话模型）——例如 nomic-embed-text-v1.5。以与对话模型相同的方式导入它，然后在 RAG 模式中选择它，并为一个文档文件夹建立索引。",
+    "offlineTitle": "验证它确实在离线运行",
+    "offlineDescription": "Rafeeq 从架构上确保运行时不发起任何网络调用。你可以自行验证：在操作系统层面阻断网络访问（防火墙规则、禁用网卡，或使用隔离虚拟机），Rafeeq 依然会照常运行。应用顶部也会显示离线状态指示器。",
+    "moreTitle": "了解更多",
+    "moreDescription": "如需从源代码构建的说明及完整技术细节，请参阅",
+    "readmeLink": "GitHub 上的 README"
+  }
+}

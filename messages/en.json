@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "title": "Rafeeq — Your offline AI companion",
+    "description": "Rafeeq is a fully offline, local AI desktop assistant for code help, document Q&A, and summarization — built for air-gapped and network-restricted machines."
+  },
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "download": "Download",
+    "docs": "Docs",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "rights": "MIT licensed.",
+    "builtBy": "Built by"
+  },
+  "home": {
+    "tagline": "رفيق — \"companion\" in Arabic",
+    "title": "Your fully offline AI companion",
+    "subtitle": "Rafeeq is a local AI desktop assistant for code help, document Q&A, and summarization — built for machines that will never see the open internet.",
+    "downloadCta": "Download Rafeeq",
+    "featuresCta": "See what it can do",
+    "highlight1Title": "Zero network calls",
+    "highlight1Description": "Rafeeq makes no network calls at runtime, by design and by construction. Block your network and it runs identically.",
+    "highlight2Title": "Runs entirely on-device",
+    "highlight2Description": "Powered by llama.cpp and quantized GGUF models on CPU — no GPU required, no API keys, no cloud.",
+    "highlight3Title": "Built for restricted machines",
+    "highlight3Description": "Corporate VMs, air-gapped networks, regulated industries — Rafeeq works where cloud AI tools can't.",
+    "bannerTitle": "No API keys. No cloud calls. No telemetry.",
+    "bannerSubtitle": "The model, the runtime, and your data never leave the machine — verifiably, not just by policy."
+  },
+  "features": {
+    "title": "Everything Rafeeq can do",
+    "subtitle": "All of it runs on-device. Nothing here needs — or uses — an internet connection.",
+    "chatTitle": "Local chat",
+    "chatDescription": "Prompt in, streamed response out, powered by a small quantized model running on CPU. No account, no rate limits, no usage sent anywhere.",
+    "managerTitle": "Model manager",
+    "managerDescription": "Point Rafeeq at a sideloaded .gguf file, swap models, and see size and quantization info at a glance. Save named profiles for quick switching.",
+    "codeTitle": "Code-help mode",
+    "codeDescription": "Paste or select code, ask questions, get explanations or suggestions. Chat and explain only — Rafeeq never executes code.",
+    "docTitle": "Document Q&A & summarization",
+    "docDescription": "Load a local .txt, .md, .docx, or .pdf file and ask questions about its contents or get a summary. Long documents are truncated to fit the model's context.",
+    "ragTitle": "Local RAG",
+    "ragDescription": "Index a folder of documents with a sideloaded embedding model, then ask questions answered from the most relevant retrieved passages — all computed on-device.",
+    "sessionTitle": "Session history",
+    "sessionDescription": "Conversations are saved automatically and can be resumed from the sidebar, so nothing is lost between sessions.",
+    "offlineTitle": "Verifiably offline",
+    "offlineDescription": "An in-app indicator and a hand-maintained dependency allowlist confirm no network-capable plugin is registered in the build. Block your network — Rafeeq runs identically."
+  },
+  "download": {
+    "title": "Download Rafeeq",
+    "subtitle": "Two installers are published. Both behave identically once a model is loaded — you can always add or switch models later.",
+    "standardName": "Rafeeq",
+    "standardDescription": "The standard installer. No model included — you sideload a .gguf file yourself after installing.",
+    "standardBestFor": "Air-gapped machines, restricted networks, or if you already know which model you want to use.",
+    "bundledName": "Rafeeq (with starter model)",
+    "bundledDescription": "Includes a small starter model (Qwen2.5-0.5B-Instruct) that installs automatically on first launch. Nothing to configure.",
+    "bundledBestFor": "Anyone on a normal internet-connected machine who wants to start chatting immediately.",
+    "size": "Size",
+    "bestFor": "Best for:",
+    "downloadButton": "Download for Windows",
+    "footer": "macOS and Linux builds are on the way. Source is available on"
+  },
+  "docs": {
+    "title": "Getting started",
+    "step1Title": "1. Install Rafeeq",
+    "step1Description": "Download the installer for your platform from the <downloadLink>Download page</downloadLink>. If you're not sure which variant to pick, the one with the starter model included is the easiest way to get going.",
+    "step2Title": "2. Add a model (standard installer only)",
+    "step2Description": "If you installed the standard build, Rafeeq needs at least one .gguf model file before it can chat:",
+    "step2List1": "Go to huggingface.co and search for a model with GGUF in the name.",
+    "step2List2": "Download a quantized file — one named like *.Q4_K_M.gguf is a good balance of size and quality.",
+    "step2List3": "Open Rafeeq, go to the Models screen, and click Open models folder. Drop the file in, then click Refresh.",
+    "step3Title": "3. Start chatting",
+    "step3Description": "Load a model from the Models screen, then pick a mode — General, Code help, Document, or RAG — depending on what you're working on.",
+    "ragTitle": "Setting up local RAG",
+    "ragDescription": "RAG mode needs a second, small embedding model (not your chat model) — for example nomic-embed-text-v1.5. Sideload it the same way as a chat model, then select it from RAG mode and index a folder of documents.",
+    "offlineTitle": "Verifying it's really offline",
+    "offlineDescription": "Rafeeq makes zero network calls at runtime, by construction. You can test this yourself: block network access at the OS level (firewall rule, disabled adapter, or an air-gapped VM) and Rafeeq will run identically. The app also shows an offline status indicator in the header.",
+    "moreTitle": "More",
+    "moreDescription": "For build-from-source instructions and full technical details, see the",
+    "readmeLink": "README on GitHub"
+  }
+}

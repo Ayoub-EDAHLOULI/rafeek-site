@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f8fa;
+  --card: #ffffff;
+  --text: #17191c;
+  --subtext: #6b7280;
+  --primary: #1d63ed;
+  --danger: #d92d20;
+  --border: #e2e5ea;
+  --input-bg: #eef0f3;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --background: #000000;
+  --card: #1c1c1e;
+  --text: #ffffff;
+  --subtext: #98989f;
+  --primary: #0a84ff;
+  --danger: #ff453a;
+  --border: #38383a;
+  --input-bg: #2c2c2e;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --background: #000000;
+    --card: #1c1c1e;
+    --text: #ffffff;
+    --subtext: #98989f;
+    --primary: #0a84ff;
+    --danger: #ff453a;
+    --border: #38383a;
+    --input-bg: #2c2c2e;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-card: var(--card);
+  --color-text: var(--text);
+  --color-subtext: var(--subtext);
+  --color-primary: var(--primary);
+  --color-danger: var(--danger);
+  --color-border: var(--border);
+  --color-input-bg: var(--input-bg);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    Avenir,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
