@@ -63,7 +63,7 @@ export default function DocsPage() {
           <p className="mt-2 text-sm text-subtext">
             {t("moreDescription")}{" "}
             <a
-              href="https://github.com/Ayoub-EDAHLOULI/rafeeq-desktop"
+              href="https://github.com/Ayoub-EDAHLOULI/Rafeeq"
               className="font-medium text-text hover:text-primary"
             >
               {t("readmeLink")}

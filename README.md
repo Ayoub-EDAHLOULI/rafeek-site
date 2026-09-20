@@ -1,6 +1,6 @@
 # Rafeeq Site
 
-Marketing and documentation site for [Rafeeq](https://github.com/Ayoub-EDAHLOULI/rafeeq-desktop), a fully offline desktop AI assistant. Built with Next.js (App Router) and deployed on Vercel.
+Marketing and documentation site for [Rafeeq](https://github.com/Ayoub-EDAHLOULI/Rafeeq), a fully offline desktop AI assistant. Built with Next.js (App Router) and deployed on Vercel.
 
 ## Pages
 

@@ -18,15 +18,17 @@ export default function DownloadPage() {
   const variants = [
     {
       name: t("standardName"),
-      size: "~20MB",
+      size: "~5MB",
       description: t("standardDescription"),
       bestFor: t("standardBestFor"),
+      href: "https://github.com/Ayoub-EDAHLOULI/Rafeeq/releases/download/0.1.0/Rafeeq_0.1.0_x64-setup.exe",
     },
     {
       name: t("bundledName"),
-      size: "~500MB",
+      size: "~460MB",
       description: t("bundledDescription"),
       bestFor: t("bundledBestFor"),
+      href: "https://github.com/Ayoub-EDAHLOULI/Rafeeq/releases/download/0.1.0/Rafeeq_0.1.0_x64_bundled-setup.exe",
     },
   ];
 
@@ -55,7 +57,7 @@ export default function DownloadPage() {
               {variant.bestFor}
             </p>
             <a
-              href="#"
+              href={variant.href}
               className="mt-4 inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
             >
               {t("downloadButton")}
@@ -67,7 +69,7 @@ export default function DownloadPage() {
       <p className="mt-8 text-sm text-subtext">
         {t("footer")}{" "}
         <a
-          href="https://github.com/Ayoub-EDAHLOULI/rafeeq-desktop"
+          href="https://github.com/Ayoub-EDAHLOULI/Rafeeq"
           className="font-medium text-text hover:text-primary"
         >
           GitHub
