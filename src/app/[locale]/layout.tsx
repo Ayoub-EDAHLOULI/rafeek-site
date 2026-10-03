@@ -5,7 +5,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { routing } from "@/i18n/routing";
+import MotionProvider from "@/components/motion/MotionProvider";
+import { routing, rtlLocales } from "@/i18n/routing";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,8 +18,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-const RTL_LOCALES = ["ar"];
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -53,7 +52,7 @@ export default async function LocaleLayout({
   }
   setRequestLocale(locale);
 
-  const dir = RTL_LOCALES.includes(locale) ? "rtl" : "ltr";
+  const dir = rtlLocales.includes(locale) ? "rtl" : "ltr";
 
   return (
     <html
@@ -63,9 +62,11 @@ export default async function LocaleLayout({
     >
       <body className="flex min-h-full flex-col bg-background text-text">
         <NextIntlClientProvider>
-          <Nav />
-          <main className="flex-1">{children}</main>
-          <Footer />
+          <MotionProvider>
+            <Nav />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </MotionProvider>
         </NextIntlClientProvider>
       </body>
     </html>

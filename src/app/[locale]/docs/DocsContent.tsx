@@ -2,18 +2,22 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { AnimatedWords, Reveal, Stagger } from "@/components/motion/Reveal";
 
 export default function DocsPage() {
   const t = useTranslations("docs");
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-20">
-      <h1 className="text-3xl font-semibold tracking-tight text-text">
-        {t("title")}
-      </h1>
+      <Stagger trigger="mount">
+        <AnimatedWords
+          text={t("title")}
+          className="text-3xl font-semibold tracking-tight text-text"
+        />
+      </Stagger>
 
       <div className="mt-10 flex flex-col gap-10">
-        <section>
+        <Reveal as="section" effect="slide">
           <h2 className="text-lg font-medium text-text">{t("step1Title")}</h2>
           <p className="mt-2 text-sm text-subtext">
             {t.rich("step1Description", {
@@ -27,9 +31,9 @@ export default function DocsPage() {
               ),
             })}
           </p>
-        </section>
+        </Reveal>
 
-        <section>
+        <Reveal as="section" effect="slide">
           <h2 className="text-lg font-medium text-text">{t("step2Title")}</h2>
           <p className="mt-2 text-sm text-subtext">{t("step2Description")}</p>
           <ol className="mt-3 list-decimal space-y-2 ps-5 text-sm text-subtext">
@@ -37,28 +41,28 @@ export default function DocsPage() {
             <li>{t("step2List2")}</li>
             <li>{t("step2List3")}</li>
           </ol>
-        </section>
+        </Reveal>
 
-        <section>
+        <Reveal as="section" effect="slide">
           <h2 className="text-lg font-medium text-text">{t("step3Title")}</h2>
           <p className="mt-2 text-sm text-subtext">{t("step3Description")}</p>
-        </section>
+        </Reveal>
 
-        <section>
+        <Reveal as="section" effect="slide">
           <h2 className="text-lg font-medium text-text">{t("ragTitle")}</h2>
           <p className="mt-2 text-sm text-subtext">{t("ragDescription")}</p>
-        </section>
+        </Reveal>
 
-        <section>
+        <Reveal as="section" effect="slide">
           <h2 className="text-lg font-medium text-text">
             {t("offlineTitle")}
           </h2>
           <p className="mt-2 text-sm text-subtext">
             {t("offlineDescription")}
           </p>
-        </section>
+        </Reveal>
 
-        <section>
+        <Reveal as="section" effect="slide">
           <h2 className="text-lg font-medium text-text">{t("moreTitle")}</h2>
           <p className="mt-2 text-sm text-subtext">
             {t("moreDescription")}{" "}
@@ -70,7 +74,7 @@ export default function DocsPage() {
             </a>
             .
           </p>
-        </section>
+        </Reveal>
       </div>
     </div>
   );

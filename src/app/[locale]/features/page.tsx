@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
+import { Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 export async function generateMetadata({
   params,
@@ -27,22 +28,37 @@ export default function FeaturesPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-6 py-20">
-      <h1 className="text-3xl font-semibold tracking-tight text-text">
-        {t("title")}
-      </h1>
-      <p className="mt-3 max-w-2xl text-subtext">{t("subtitle")}</p>
+      <Stagger trigger="mount">
+        <StaggerItem
+          as="h1"
+          effect="focus"
+          className="text-3xl font-semibold tracking-tight text-text"
+        >
+          {t("title")}
+        </StaggerItem>
+        <StaggerItem
+          as="p"
+          effect="focus"
+          className="mt-3 max-w-2xl text-subtext"
+        >
+          {t("subtitle")}
+        </StaggerItem>
+      </Stagger>
 
-      <div className="mt-12 grid gap-6 sm:grid-cols-2">
-        {features.map((feature) => (
-          <div
+      <Stagger className="mt-12 grid gap-6 sm:grid-cols-2" interval={0.12}>
+        {features.map((feature, i) => (
+          <StaggerItem
             key={feature.title}
-            className="rounded-xl border border-border bg-card p-6"
+            effect="slide"
+            from={i % 2 === 0 ? "start" : "end"}
+            hover
+            className="rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/40"
           >
             <h2 className="font-medium text-text">{feature.title}</h2>
             <p className="mt-2 text-sm text-subtext">{feature.description}</p>
-          </div>
+          </StaggerItem>
         ))}
-      </div>
+      </Stagger>
     </div>
   );
 }

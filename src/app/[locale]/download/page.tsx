@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
+import {
+  Press,
+  Reveal,
+  Stagger,
+  StaggerItem,
+} from "@/components/motion/Reveal";
 
 export async function generateMetadata({
   params,
@@ -34,16 +40,26 @@ export default function DownloadPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-20">
-      <h1 className="text-3xl font-semibold tracking-tight text-text">
-        {t("title")}
-      </h1>
-      <p className="mt-3 text-subtext">{t("subtitle")}</p>
+      <Stagger trigger="mount">
+        <StaggerItem
+          as="h1"
+          effect="scale"
+          className="text-3xl font-semibold tracking-tight text-text"
+        >
+          {t("title")}
+        </StaggerItem>
+        <StaggerItem as="p" effect="scale" className="mt-3 text-subtext">
+          {t("subtitle")}
+        </StaggerItem>
+      </Stagger>
 
-      <div className="mt-10 flex flex-col gap-4">
+      <Stagger className="mt-10 flex flex-col gap-4" interval={0.2}>
         {variants.map((variant) => (
-          <div
+          <StaggerItem
             key={variant.name}
-            className="rounded-xl border border-border bg-card p-6"
+            effect="flip"
+            hover
+            className="rounded-xl border border-border bg-card p-6 transition-colors hover:border-primary/40"
           >
             <div className="flex items-baseline justify-between gap-4">
               <h2 className="font-medium text-text">{variant.name}</h2>
@@ -56,17 +72,19 @@ export default function DownloadPage() {
               <span className="font-medium text-text">{t("bestFor")}</span>{" "}
               {variant.bestFor}
             </p>
-            <a
-              href={variant.href}
-              className="mt-4 inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
-            >
-              {t("downloadButton")}
-            </a>
-          </div>
+            <Press className="mt-4">
+              <a
+                href={variant.href}
+                className="inline-block rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
+              >
+                {t("downloadButton")}
+              </a>
+            </Press>
+          </StaggerItem>
         ))}
-      </div>
+      </Stagger>
 
-      <p className="mt-8 text-sm text-subtext">
+      <Reveal as="p" delay={0.15} className="mt-8 text-sm text-subtext">
         {t("footer")}{" "}
         <a
           href="https://github.com/Ayoub-EDAHLOULI/Rafeeq"
@@ -75,7 +93,7 @@ export default function DownloadPage() {
           GitHub
         </a>
         .
-      </p>
+      </Reveal>
     </div>
   );
 }
