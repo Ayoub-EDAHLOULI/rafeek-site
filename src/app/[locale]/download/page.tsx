@@ -24,7 +24,7 @@ export default function DownloadPage() {
   const variants = [
     {
       name: t("standardName"),
-      size: "~5MB",
+      size: "~3MB",
       description: t("standardDescription"),
       bestFor: t("standardBestFor"),
       href: "https://github.com/Ayoub-EDAHLOULI/Rafeeq/releases/download/0.1.0/Rafeeq_0.1.0_x64-setup.exe",

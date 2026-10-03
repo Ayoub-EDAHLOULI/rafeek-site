@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import MotionProvider from "@/components/motion/MotionProvider";
+import ChatWidget from "@/components/assistant/ChatWidget";
 import { routing, rtlLocales } from "@/i18n/routing";
 import "./globals.css";
 
@@ -66,6 +67,7 @@ export default async function LocaleLayout({
             <Nav />
             <main className="flex-1">{children}</main>
             <Footer />
+            <ChatWidget />
           </MotionProvider>
         </NextIntlClientProvider>
       </body>

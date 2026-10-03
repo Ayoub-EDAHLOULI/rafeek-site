@@ -80,5 +80,26 @@
     "moreTitle": "More",
     "moreDescription": "For build-from-source instructions and full technical details, see the",
     "readmeLink": "README on GitHub"
+  },
+  "assistant": {
+    "open": "Ask the Rafeeq assistant",
+    "close": "Close assistant",
+    "title": "Rafeeq Assistant",
+    "subtitle": "Answers questions about Rafeeq",
+    "welcome": "Hi! I can answer questions about Rafeeq: features, installers, models and offline use. What would you like to know?",
+    "suggestion1": "Which installer should I download?",
+    "suggestion2": "Does Rafeeq really work offline?",
+    "suggestion3": "How do I add a model?",
+    "placeholder": "Ask about Rafeeq…",
+    "send": "Send",
+    "stop": "Stop",
+    "thinking": "Assistant is typing",
+    "you": "You",
+    "assistant": "Assistant",
+    "disclaimer": "This website assistant uses a cloud AI service and can make mistakes. The Rafeeq app itself runs fully offline.",
+    "errorBusy": "The assistant is busy right now. Please try again in a minute, or check the Docs page.",
+    "errorRateLimit": "You're sending messages too quickly. Please wait a moment and try again.",
+    "errorGeneric": "Something went wrong. Please try again, or check the Docs page.",
+    "errorTooLong": "That message is too long. Please keep it under 800 characters."
   }
 }

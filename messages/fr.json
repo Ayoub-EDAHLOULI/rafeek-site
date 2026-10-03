@@ -80,5 +80,26 @@
     "moreTitle": "Pour aller plus loin",
     "moreDescription": "Pour les instructions de compilation depuis les sources et tous les détails techniques, consultez le",
     "readmeLink": "README sur GitHub"
+  },
+  "assistant": {
+    "open": "Poser une question à l'assistant Rafeeq",
+    "close": "Fermer l'assistant",
+    "title": "Assistant Rafeeq",
+    "subtitle": "Répond à vos questions sur Rafeeq",
+    "welcome": "Bonjour ! Je peux répondre à vos questions sur Rafeeq : fonctionnalités, installateurs, modèles et utilisation hors ligne. Que souhaitez-vous savoir ?",
+    "suggestion1": "Quel installateur dois-je télécharger ?",
+    "suggestion2": "Rafeeq fonctionne-t-il vraiment hors ligne ?",
+    "suggestion3": "Comment ajouter un modèle ?",
+    "placeholder": "Posez une question sur Rafeeq…",
+    "send": "Envoyer",
+    "stop": "Arrêter",
+    "thinking": "L'assistant écrit",
+    "you": "Vous",
+    "assistant": "Assistant",
+    "disclaimer": "Cet assistant du site utilise un service d'IA dans le cloud et peut se tromper. L'application Rafeeq, elle, fonctionne entièrement hors ligne.",
+    "errorBusy": "L'assistant est occupé pour le moment. Réessayez dans une minute ou consultez la page Docs.",
+    "errorRateLimit": "Vous envoyez des messages trop rapidement. Patientez un instant puis réessayez.",
+    "errorGeneric": "Une erreur s'est produite. Réessayez ou consultez la page Docs.",
+    "errorTooLong": "Ce message est trop long. Limitez-le à 800 caractères."
   }
 }
