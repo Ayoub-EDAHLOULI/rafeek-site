@@ -9,6 +9,7 @@
   --danger: #d92d20;
   --border: #e2e5ea;
   --input-bg: #eef0f3;
+  --particle-color: #1d63ed;
   color-scheme: light;
 }
 
@@ -21,6 +22,7 @@
   --danger: #ff453a;
   --border: #38383a;
   --input-bg: #2c2c2e;
+  --particle-color: #7fb2ff;
   color-scheme: dark;
 }
 
@@ -34,6 +36,7 @@
     --danger: #ff453a;
     --border: #38383a;
     --input-bg: #2c2c2e;
+    --particle-color: #7fb2ff;
     color-scheme: dark;
   }
 }
